@@ -1,0 +1,26 @@
+/* Smooth transitions */
+button, a {
+    transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+    transform: translateY(-2px);
+}
+
+/* Improved editor styling */
+textarea {
+    resize: vertical;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 640px) {
+    .container {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+}
