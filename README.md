@@ -1,39 +1,119 @@
-# Hi there, I'm Afif Bashar! 👋
+<h1 align="center">👨‍⚕️ Dr. Afif Bashar | MBBS, MRCS Part A (UK)</h1>
+<h3 align="center">🩺 General Physician | Medical Content Creator | Developer</h3>
 
-Welcome to my GitHub profile! I'm a passionate software developer with a strong interest in open source contributions and developing innovative solutions. 
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=%2316A085&size=22&lines=Hello!+I'm+Dr+Afif+Bashar+👋;Doctor+%7C+Tech+Enthusiast;MRCS+Part+A+%7C+Medical+Officer;Building+Health+Tech+%F0%9F%9A%80">
+</p>
 
-## About Me
+---
 
-- 🌱 I’m currently learning advanced data structures and algorithms.
-- 👯 I’m looking to collaborate on exciting open source projects.
-- 💬 Ask me about web development, Python, and machine learning.
-- 📫 How to reach me: afifbashar@example.com
-- ⚡ Fun fact: I love solving puzzles and playing chess in my free time.
+## 🔬 About Me  
+- 🏥 **Medical Officer** at **Health Aid Hospital, Dhaka**  
+- 🎥 **Sharing medical knowledge** on [YouTube](https://www.youtube.com/@DrAfifBashar)  
+- 💡 Currently **learning React.js, Backend Development**  
+- 🚀 **Developing** a **Prescription Writing System & Pediatric Dose Calculator**  
+- 📖 **Passed MRCS Part A (UK) | Interested in Surgery & Medical Tech**  
+- 📝 **Writing health blogs & educating patients**  
+- 🌍 **Passionate about merging healthcare with technology**  
 
-## Skills
+---
 
-Here are a few technologies I've been working with recently:
+## 🛠 Tech Stack & Skills  
 
-- **Languages:** Python, JavaScript, C++
-- **Frameworks:** Django, React, Flask
-- **Tools:** Git, Docker, Kubernetes
-- **Databases:** MySQL, PostgreSQL, MongoDB
+### 👨‍💻 Programming Languages  
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
-## Projects
+### 🔧 Tools & Frameworks  
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-Here are some of my notable projects:
+### 📊 Areas of Expertise  
+✔ **Diabetes, Hypertension, Asthma, Pediatric Care, Dermatology**  
+✔ **Chronic Disease Management, Surgical Consultation**  
+✔ **Health Technology & Software Development**  
 
-- [**Project Name**](https://github.com/afifbashar/project-name): Brief description of what the project does.
-- [**Another Project**](https://github.com/afifbashar/another-project): Brief description of what the project does.
+---
 
-## GitHub Stats
+## 🚀 Current Projects  
+- 🎯 **[Prescription Writing System](https://github.com/DrAfifBashar/Prescription-Software)** (React & Node.js)  
+- 🔢 **[Pediatric Dose Calculator](https://github.com/DrAfifBashar/Pediatric-Dose-Calculator)** (JavaScript)  
+- 🌐 **[My Website](https://github.com/DrAfifBashar/Website)**  
 
-![Afif Bashar's GitHub Stats](https://github-readme-stats.vercel.app/api?username=afifbashar&show_icons=true&theme=radical)
+---
 
-## Connect with Me
+## 📈 GitHub Stats  
+<p align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=DrAfifBashar&show_icons=true&theme=radical" />
+  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=DrAfifBashar&theme=radical" />
+</p>
 
-- [LinkedIn](https://linkedin.com/in/afifbashar)
-- [Twitter](https://twitter.com/afifbashar)
-- [Personal Website](https://afifbashar.com)
+---
 
-Thanks for visiting my profile! Feel free to explore my repositories and reach out if you'd like to collaborate on a project or just chat about tech!
+## 🔥 GitHub Activity Graph  
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DrAfifBashar&theme=react-dark">
+</p>
+
+---
+
+## 📊 Most Used Languages  
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DrAfifBashar&layout=compact&theme=radical">
+</p>
+
+---
+
+## 🏆 GitHub Trophies  
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=DrAfifBashar&theme=radical">
+</p>
+
+---
+
+## 🏅 Certifications  
+- **MRCS Part A (UK)** 🏥  
+- **MBBS** (Medical Degree) 🎓  
+- **Basic Surgical Skills Training** 🔬  
+
+---
+
+## 📚 Latest Blog Posts  
+- 📝 [How to Manage Diabetes Effectively](https://yourblog.com/diabetes)  
+- 📝 [MRCS Part A Study Guide](https://yourblog.com/mrcs-guide)  
+- 📝 [Top 10 Health Tips for 2024](https://yourblog.com/health-tips)  
+
+---
+
+## 🌐 Connect with Me  
+<p align="center">
+  <a href="https://linkedin.com/in/yourprofile">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin">
+  </a>
+  <a href="https://www.youtube.com/@DrAfifBashar">
+    <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube">
+  </a>
+  <a href="https://yourwebsite.com">
+    <img src="https://img.shields.io/badge/Website-181717?style=for-the-badge&logo=github">
+  </a>
+</p>
+
+---
+
+## 🏄 Fun Fact  
+💡 **Did you know?**  
+*"A doctor can become a coder, but a coder can't become a doctor (easily)!"* 😆  
+
+---
+
+## 📜 License  
+🔹 Feel free to **fork & use** this template, but **give credit** by linking back to my profile. 😊  
+
+---
+
+🎯 **If you liked my profile, don’t forget to give it a ⭐!**  
+🚀 **Let's connect and collaborate!**  
