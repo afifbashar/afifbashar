@@ -8,7 +8,7 @@
 ---
 
 ## 🔬 About Me  
-- 🏥 **Medical Officer** at **Health Aid Hospital, Dhaka**  
+- 🏥 **Medical Officer**  
 - 🎥 **Sharing medical knowledge** on [YouTube](https://www.youtube.com/@DrAfifBashar)  
 - 💡 Currently **learning React.js, Backend Development**  
 - 🚀 **Developing** a **Prescription Writing System & Pediatric Dose Calculator**  
@@ -41,8 +41,8 @@
 ---
 
 ## 🚀 Current Projects  
-- 🎯 **[Prescription Writing System](https://github.com/afifbashar/Prescription-Software)** (React & Node.js)  
-- 🔢 **[Pediatric Dose Calculator](https://github.com/afifbashar/Pediatric-Dose-Calculator)** (JavaScript)  
+- 🎯 **[Prescription Writing System](https://github.com/afifbashar)** (React & Node.js)  
+- 🔢 **[Pediatric Dose Calculator](https://github.com/afifbashar)** (JavaScript)  
 - 🌐 **[My Website](https://afifbashar.github.io)**  
 
 ---
@@ -84,9 +84,9 @@
 ---
 
 ## 📚 Latest Blog Posts  
-- 📝 [How to Manage Diabetes Effectively](https://afifbashar.free.nf/blog/diabetes)  
-- 📝 [MRCS Part A Study Guide](https://afifbashar.free.nf/blog/mrcs-guide)  
-- 📝 [Top 10 Health Tips for 2024](https://afifbashar.free.nf/blog/health-tips)  
+- 📝 [How to Manage Diabetes Effectively](https://afifbashar.free.nf/blog.php)  
+- 📝 [MRCS Part A Study Guide](https://afifbashar.free.nf/blog.php)  
+- 📝 [Top 10 Health Tips for 2024](https://afifbashar.free.nf/blog.php)  
 
 ---
 
