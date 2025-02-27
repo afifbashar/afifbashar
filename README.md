@@ -8,7 +8,7 @@
 ---
 
 ## 🔬 About Me  
-- 🏥 **Medical Officer** 
+- 🏥 **Medical Officer** at **Health Aid Hospital, Dhaka**  
 - 🎥 **Sharing medical knowledge** on [YouTube](https://www.youtube.com/@DrAfifBashar)  
 - 💡 Currently **learning React.js, Backend Development**  
 - 🚀 **Developing** a **Prescription Writing System & Pediatric Dose Calculator**  
@@ -21,9 +21,10 @@
 ## 🛠 Tech Stack & Skills  
 
 ### 👨‍💻 Programming Languages  
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
@@ -40,37 +41,37 @@
 ---
 
 ## 🚀 Current Projects  
-- 🎯 **[Prescription Writing System](https://github.com/DrAfifBashar/Prescription-Software)** (React & Node.js)  
-- 🔢 **[Pediatric Dose Calculator](https://github.com/DrAfifBashar/Pediatric-Dose-Calculator)** (JavaScript)  
-- 🌐 **[My Website](https://github.com/DrAfifBashar/Website)**  
+- 🎯 **[Prescription Writing System](https://github.com/afifbashar/Prescription-Software)** (React & Node.js)  
+- 🔢 **[Pediatric Dose Calculator](https://github.com/afifbashar/Pediatric-Dose-Calculator)** (JavaScript)  
+- 🌐 **[My Website](https://afifbashar.github.io)**  
 
 ---
 
 ## 📈 GitHub Stats  
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=DrAfifBashar&show_icons=true&theme=radical" />
-  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=DrAfifBashar&theme=radical" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=afifbashar&show_icons=true&theme=radical" />
+  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=afifbashar&theme=radical" />
 </p>
 
 ---
 
 ## 🔥 GitHub Activity Graph  
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DrAfifBashar&theme=react-dark">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=afifbashar&theme=react-dark">
 </p>
 
 ---
 
 ## 📊 Most Used Languages  
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DrAfifBashar&layout=compact&theme=radical">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=afifbashar&layout=compact&theme=radical">
 </p>
 
 ---
 
 ## 🏆 GitHub Trophies  
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=DrAfifBashar&theme=radical">
+  <img src="https://github-profile-trophy.vercel.app/?username=afifbashar&theme=radical">
 </p>
 
 ---
@@ -83,15 +84,15 @@
 ---
 
 ## 📚 Latest Blog Posts  
-- 📝 [How to Manage Diabetes Effectively](https://yourblog.com/diabetes)  
-- 📝 [MRCS Part A Study Guide](https://yourblog.com/mrcs-guide)  
-- 📝 [Top 10 Health Tips for 2024](https://yourblog.com/health-tips)  
+- 📝 [How to Manage Diabetes Effectively](https://afifbashar.free.nf/blog/diabetes)  
+- 📝 [MRCS Part A Study Guide](https://afifbashar.free.nf/blog/mrcs-guide)  
+- 📝 [Top 10 Health Tips for 2024](https://afifbashar.free.nf/blog/health-tips)  
 
 ---
 
 ## 🌐 Connect with Me  
 <p align="center">
-  <a href="https://linkedin.com/in/yourprofile">
+  <a href="https://linkedin.com/in/afifbashar">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin">
   </a>
   <a href="https://www.youtube.com/@DrAfifBashar">
