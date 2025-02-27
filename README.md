@@ -8,7 +8,7 @@
 ---
 
 ## 🔬 About Me  
-- 🏥 **Medical Officer** at **Health Aid Hospital, Dhaka**  
+- 🏥 **Medical Officer** 
 - 🎥 **Sharing medical knowledge** on [YouTube](https://www.youtube.com/@DrAfifBashar)  
 - 💡 Currently **learning React.js, Backend Development**  
 - 🚀 **Developing** a **Prescription Writing System & Pediatric Dose Calculator**  
@@ -97,7 +97,7 @@
   <a href="https://www.youtube.com/@DrAfifBashar">
     <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube">
   </a>
-  <a href="https://yourwebsite.com">
+  <a href="https://afifbashar.free.nf">
     <img src="https://img.shields.io/badge/Website-181717?style=for-the-badge&logo=github">
   </a>
 </p>
