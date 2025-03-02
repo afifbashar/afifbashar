@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রমজান ক্যালেন্ডার ২০২৫ - বাংলাদেশ</title>
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="রমজান ক্যালেন্ডার ২০২৫ - বাংলাদেশ | সেহরি ও ইফতারের সময়">
+    <meta property="og:description" content="রমজান ২০২৫ এর জন্য আপনার জেলার সেহরি ও ইফতারের সময়সূচি দেখুন। প্রিন্ট করুন!">
+    <meta property="og:image" content="https://afifbashar.free.nf/ramadan/ramadan-2025-image.jpg">
+    <meta property="og:url" content="https://afifbashar.free.nf/ramadan/">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans Bengali', sans-serif; background-color: #f4e8d0; color: #333; line-height: 1.2; }
+        .bg-islamic-gradient { background: linear-gradient(45deg, #1e3a8a, #2d6a4f); }
+        .text-gold { color: #ffd700; }
+        .border-gold { border-color: #d4a017; }
+        .bg-light-green { background-color: #e6f3e6; }
+        .border-green { border-color: #2d6a4f; }
+        .shadow-islamic { box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); }
+        .table-container { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        table { min-width: 100%; border-collapse: collapse; }
+        th, td { padding: 0.5rem; text-align: center; }
+        @media (min-width: 768px) { th, td { padding: 0.75rem; } }
+        @media print {
+            .no-print { display: none; }
+            body { background: none; color: #000; margin: 0; padding: 5mm; font-size: 10pt; }
+            .print-header { display: block; text-align: center; margin-bottom: 3mm; }
+            .print-table { width: 100%; border: 1px solid #2d6a4f; }
+            .print-table th { background: #1e3a8a; color: #ffd700; font-size: 8pt; padding: 1mm; font-weight: bold; }
+            .print-table td { border: 1px solid #2d6a4f; font-size: 7pt; padding: 0.5mm; text-align: center; }
+            .section-title { font-size: 10pt; margin: 2mm 0 1mm; background: #2d6a4f; color: #ffd700; padding: 1mm; text-align: center; }
+            .print-footer { text-align: center; margin-top: 3mm; font-size: 6pt; }
+            @page { size: A4; margin: 5mm; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="fixed w-full top-0 z-50 bg-islamic-gradient p-4 shadow-islamic no-print">
+        <ul class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 list-none">
+            <li><a href="https://afifbashar.free.nf/" class="text-gold text-lg sm:text-xl font-bold hover:text-yellow-600 hover:translate-y-[-2px] transition duration-300">হোম</a></li>
+            <li><a href="https://afifbashar.free.nf/about.html" class="text-gold text-lg sm:text-xl font-bold hover:text-yellow-600 hover:translate-y-[-2px] transition duration-300">আমাদের সম্পর্কে</a></li>
+            <li><a href="https://afifbashar.free.nf/contact.html" class="text-gold text-lg sm:text-xl font-bold hover:text-yellow-600 hover:translate-y-[-2px] transition duration-300">যোগাযোগ</a></li>
+            <li><a href="https://afifbashar.free.nf/ramadan/" class="text-gold text-lg sm:text-xl font-bold hover:text-yellow-600 hover:translate-y-[-2px] transition duration-300">রমজান ক্যালেন্ডার</a></li>
+        </ul>
+    </nav>
+
+    <header class="mt-16 bg-islamic-gradient text-gold text-center p-6 sm:p-10 border-b-4 border-gold shadow-islamic no-print">
+        <h1 class="text-2xl sm:text-4xl font-bold shadow-text">ইসলামিক ফাউন্ডেশন</h1>
+        <h2 class="text-lg sm:text-2xl font-medium mt-2">রমজান ক্যালেন্ডার ২০২৫ (বাংলাদেশ)</h2>
+    </header>
+
+    <main class="p-4 sm:p-10 min-h-[80vh]">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden border-4 border-islamic-gradient">
+            <div class="today-section text-center p-4 bg-light-green border-2 border-green rounded-lg text-base sm:text-xl font-bold text-islamic-gradient no-print" id="todaySection">
+                আজকের তারিখ: লোড হচ্ছে...
+            </div>
+            <div class="visitor-counter text-center p-4 bg-light-green border-2 border-green rounded-lg text-base sm:text-xl font-bold text-islamic-gradient no-print" id="visitorCounter">
+                মোট দর্শক: লোড হচ্ছে...
+            </div>
+            <!-- District Selector -->
+            <div class="district-selector text-center p-4 no-print">
+                <label for="district" class="text-lg font-bold text-islamic-gradient">জেলা নির্বাচন করুন:</label>
+                <select id="district" class="mt-2 p-2 border-2 border-green rounded-lg text-lg w-full sm:w-auto">
+                    <option value="dhaka">ঢাকা</option>
+                    <option value="gazipur">গাজীপুর</option>
+                    <option value="mymensingh">ময়মনসিংহ</option>
+                    <option value="chandpur">চাঁদপুর</option>
+                    <option value="lakshmipur">লক্ষ্মীপুর</option>
+                    <option value="narsingdi">নরসিংদী</option>
+                    <option value="kishoreganj">কিশোরগঞ্জ</option>
+                    <option value="noakhali">নোয়াখালী</option>
+                    <option value="comilla">কুমিল্লা</option>
+                    <option value="brahmanbaria">ব্রাহ্মণবাড়িয়া</option>
+                    <option value="netrokona">নেত্রকোনা</option>
+                    <option value="feni">ফেনী</option>
+                    <option value="coxsbazar">কক্সবাজার</option>
+                    <option value="habiganj">হবিগঞ্জ</option>
+                    <option value="chittagong">চট্টগ্রাম</option>
+                    <option value="sunamganj">সুনামগঞ্জ</option>
+                    <option value="maulvibazar">মৌলভীবাজার</option>
+                    <option value="sylhet">সিলেট</option>
+                    <option value="manikganj">মানিকগঞ্জ</option>
+                    <option value="tangail">টাঙ্গাইল</option>
+                    <option value="gopalganj">গোপালগঞ্জ</option>
+                    <option value="faridpur">ফরিদপুর</option>
+                    <option value="sherpur">শেরপুর</option>
+                    <option value="bagerhat">বাগেরহাট</option>
+                    <option value="sirajganj">সিরাজগঞ্জ</option>
+                    <option value="jamalpur">জামালপুর</option>
+                    <option value="khulna">খুলনা</option>
+                    <option value="narail">নড়াইল</option>
+                    <option value="gaibandha">গাইবান্ধা</option>
+                    <option value="rajbari">রাজবাড়ী</option>
+                    <option value="magura">মাগুরা</option>
+                    <option value="bogra">বগুড়া</option>
+                    <option value="kurigram">কুড়িগ্রাম</option>
+                    <option value="kushtia">কুষ্টিয়া</option>
+                    <option value="pabna">পাবনা</option>
+                    <option value="rangpur">রংপুর</option>
+                    <option value="jessore">যশোর</option>
+                    <option value="lalmonirhat">লালমনিরহাট</option>
+                    <option value="satkhira">সাতক্ষীরা</option>
+                    <option value="jhenaidah">ঝিনাইদহ</option>
+                    <option value="chuadanga">চুয়াডাঙ্গা</option>
+                    <option value="natore">নাটোর</option>
+                    <option value="joypurhat">জয়পুরহাট</option>
+                    <option value="naogaon">নওগাঁ</option>
+                    <option value="dinajpur">দিনাজপুর</option>
+                    <option value="meherpur">মেহেরপুর</option>
+                    <option value="rajshahi">রাজশাহী</option>
+                    <option value="nilphamari">নীলফামারী</option>
+                    <option value="panchagarh">পঞ্চগড়</option>
+                    <option value="chapainawabganj">চাঁপাইনবাবগঞ্জ</option>
+                    <option value="thakurgaon">ঠাকুরগাঁও</option>
+                    <option value="narayanganj">নারায়ণগঞ্জ</option>
+                    <option value="munshiganj">মুন্সিগঞ্জ</option>
+                    <option value="bhola">ভোলা</option>
+                    <option value="madaripur">মাদারীপুর</option>
+                    <option value="shariatpur">শরীয়তপুর</option>
+                    <option value="barguna">বরগুনা</option>
+                    <option value="jhalokati">ঝালকাঠি</option>
+                    <option value="barisal">বরিশাল</option>
+                    <option value="patuakhali">পটুয়াখালী</option>
+                </select>
+            </div>
+            <div class="buttons flex justify-center mt-6 no-print">
+                <button class="px-6 py-3 bg-green-800 text-gold rounded-lg text-base sm:text-xl font-bold cursor-pointer transition duration-300 shadow-md hover:bg-green-900 hover:translate-y-[-3px] active:translate-y-0" onclick="window.print()">প্রিন্ট করুন</button>
+            </div>
+            <div class="note text-center mt-4 text-green-700 italic text-xs sm:text-sm no-print">
+                নির্বাচিত জেলার জন্য ঢাকার সময়ের সঙ্গে সমন্বয় করা হয়েছে।
+            </div>
+            <!-- Calendar Sections -->
+            <div class="print-header hidden">
+                <h1 class="text-xl font-bold">ইসলামিক ফাউন্ডেশন</h1>
+                <h2 class="text-lg">রমজান ক্যালেন্ডার ২০২৫ (<span id="printDistrict">ঢাকা</span>)</h2>
+            </div>
+            <div class="section-title bg-green-800 text-gold p-4 text-center text-xl sm:text-2xl font-bold border-b-2 border-gold">
+                রমজান ২০২৫ সময়সূচি
+            </div>
+            <div class="table-container">
+                <table class="w-full border-collapse mt-4 print-table">
+                    <thead>
+                        <tr>
+                            <th class="bg-islamic-gradient text-gold p-5 text-center border-b border-gray-300 text-lg font-bold">রমজান তারিখ</th>
+                            <th class="bg-islamic-gradient text-gold p-5 text-center border-b border-gray-300 text-lg font-bold">গ্রেগোরীয় তারিখ</th>
+                            <th class="bg-islamic-gradient text-gold p-5 text-center border-b border-gray-300 text-lg font-bold">দিন</th>
+                            <th class="bg-islamic-gradient text-gold p-5 text-center border-b border-gray-300 text-lg font-bold">সেহরি</th>
+                            <th class="bg-islamic-gradient text-gold p-5 text-center border-b border-gray-300 text-lg font-bold">ইফতার</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendarBody"></tbody>
+                </table>
+            </div>
+            <div class="print-footer hidden">© ২০২৫ ইসলামিক ফাউন্ডেশন। তৈরি করেছেন: ডা. আফিফ বাশার</div>
+        </div>
+    </main>
+
+    <footer class="text-center p-6 bg-islamic-gradient text-gold w-full border-t-4 border-gold no-print">
+        <p class="text-sm sm:text-lg">© ২০২৫ ইসলামিক ফাউন্ডেশন, ঢাকা। সকল অধিকার সংরক্ষিত। <br>তৈরি করেছেন: ডা. আফিফ বাশার</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const calendarData = [
+                { ramadanDate: '১ রমজান', gregorianDate: '২ মার্চ', day: 'রবিবার', sehri: '৫:০৪ মি.', iftar: '৬:০২ মি.' },
+                { ramadanDate: '২ রমজান', gregorianDate: '৩ মার্চ', day: 'সোমবার', sehri: '৫:০৩ মি.', iftar: '৬:০৩ মি.' },
+                { ramadanDate: '৩ রমজান', gregorianDate: '৪ মার্চ', day: 'মঙ্গলবার', sehri: '৫:০২ মি.', iftar: '৬:০৩ মি.' },
+                { ramadanDate: '৪ রমজান', gregorianDate: '৫ মার্চ', day: 'বুধবার', sehri: '৫:০১ মি.', iftar: '৬:০৪ মি.' },
+                { ramadanDate: '৫ রমজান', gregorianDate: '৬ মার্চ', day: 'বৃহস্পতিবার', sehri: '৫:০০ মি.', iftar: '৬:০৪ মি.' },
+                { ramadanDate: '৬ রমজান', gregorianDate: '৭ মার্চ', day: 'শুক্রবার', sehri: '৪:৫৯ মি.', iftar: '৬:০৫ মি.' },
+                { ramadanDate: '৭ রমজান', gregorianDate: '৮ মার্চ', day: 'শনিবার', sehri: '৪:৫৮ মি.', iftar: '৬:০৫ মি.' },
+                { ramadanDate: '৮ রমজান', gregorianDate: '৯ মার্চ', day: 'রবিবার', sehri: '৪:৫৭ মি.', iftar: '৬:০৬ মি.' },
+                { ramadanDate: '৯ রমজান', gregorianDate: '১০ মার্চ', day: 'সোমবার', sehri: '৪:৫৬ মি.', iftar: '৬:০৬ মি.' },
+                { ramadanDate: '১০ রমজান', gregorianDate: '১১ মার্চ', day: 'মঙ্গলবার', sehri: '৪:৫৫ মি.', iftar: '৬:০৬ মি.' },
+                { ramadanDate: '১১ রমজান', gregorianDate: '১২ মার্চ', day: 'বুধবার', sehri: '৪:৫৪ মি.', iftar: '৬:০৭ মি.' },
+                { ramadanDate: '১২ রমজান', gregorianDate: '১৩ মার্চ', day: 'বৃহস্পতিবার', sehri: '৪:৫৩ মি.', iftar: '৬:০৭ মি.' },
+                { ramadanDate: '১৩ রমজান', gregorianDate: '১৪ মার্চ', day: 'শুক্রবার', sehri: '৪:৫২ মি.', iftar: '৬:০৮ মি.' },
+                { ramadanDate: '১৪ রমজান', gregorianDate: '১৫ মার্চ', day: 'শনিবার', sehri: '৪:৫১ মি.', iftar: '৬:০৮ মি.' },
+                { ramadanDate: '১৫ রমজান', gregorianDate: '১৬ মার্চ', day: 'রবিবার', sehri: '৪:৫০ মি.', iftar: '৬:০৮ মি.' },
+                { ramadanDate: '১৬ রমজান', gregorianDate: '১৭ মার্চ', day: 'সোমবার', sehri: '৪:৪৯ মি.', iftar: '৬:০৯ মি.' },
+                { ramadanDate: '১৭ রমজান', gregorianDate: '১৮ মার্চ', day: 'মঙ্গলবার', sehri: '৪:৪৮ মি.', iftar: '৬:০৯ মি.' },
+                { ramadanDate: '১৮ রমজান', gregorianDate: '১৯ মার্চ', day: 'বুধবার', sehri: '৪:৪৭ মি.', iftar: '৬:১০ মি.' },
+                { ramadanDate: '১৯ রমজান', gregorianDate: '২০ মার্চ', day: 'বৃহস্পতিবার', sehri: '৪:৪৬ মি.', iftar: '৬:১০ মি.' },
+                { ramadanDate: '২০ রমজান', gregorianDate: '২১ মার্চ', day: 'শুক্রবার', sehri: '৪:৪৫ মি.', iftar: '৬:১০ মি.' },
+                { ramadanDate: '২১ রমজান', gregorianDate: '২২ মার্চ', day: 'শনিবার', sehri: '৪:৪৪ মি.', iftar: '৬:১১ মি.' },
+                { ramadanDate: '২২ রমজান', gregorianDate: '২৩ মার্চ', day: 'রবিবার', sehri: '৪:৪৩ মি.', iftar: '৬:১১ মি.' },
+                { ramadanDate: '২৩ রমজান', gregorianDate: '২৪ মার্চ', day: 'সোমবার', sehri: '৪:৪২ মি.', iftar: '৬:১১ মি.' },
+                { ramadanDate: '২৪ রমজান', gregorianDate: '২৫ মার্চ', day: 'মঙ্গলবার', sehri: '৪:৪১ মি.', iftar: '৬:১২ মি.' },
+                { ramadanDate: '২৫ রমজান', gregorianDate: '২৬ মার্চ', day: 'বুধবার', sehri: '৪:৪০ মি.', iftar: '�６:১২ মি.' },
+                { ramadanDate: '২৬ রমজান', gregorianDate: '২৭ মার্চ', day: 'বৃহস্পতিবার', sehri: '৪:৩৯ মি.', iftar: '৬:১৩ মি.' },
+                { ramadanDate: '২৭ রমজান', gregorianDate: '২৮ মার্চ', day: 'শুক্রবার', sehri: '৪:৩৮ মি.', iftar: '৬:১৩ মি.' },
+                { ramadanDate: '২৮ রমজান', gregorianDate: '২৯ মার্চ', day: 'শনিবার', sehri: '৪:৩৭ মি.', iftar: '৬:১৪ মি.' },
+                { ramadanDate: '২৯ রমজান', gregorianDate: '৩০ মার্চ', day: 'রবিবার', sehri: '৪:৩৬ মি.', iftar: '৬:১৪ মি.' },
+                { ramadanDate: '৩০ রমজান', gregorianDate: '৩১ মার্চ', day: 'সোমবার', sehri: '৪:৩৫ মি.', iftar: '৬:১৫ মি.' }
+            ];
+
+            const districtOffsets = {
+                'dhaka': { sehri: 0, iftar: 0 },
+                'gazipur': { sehri: 1, iftar: 0 },
+                'mymensingh': { sehri: 1, iftar: 0 },
+                'chandpur': { sehri: 1, iftar: 1 },
+                'lakshmipur': { sehri: 1, iftar: 1 },
+                'narsingdi': { sehri: 2, iftar: 2 },
+                'kishoreganj': { sehri: 2, iftar: 2 },
+                'noakhali': { sehri: 2, iftar: 2 },
+                'comilla': { sehri: 3, iftar: 3 },
+                'brahmanbaria': { sehri: 3, iftar: 3 },
+                'netrokona': { sehri: 3, iftar: 3 },
+                'feni': { sehri: 3, iftar: 3 },
+                'coxsbazar': { sehri: 4, iftar: 4 },
+                'habiganj': { sehri: 4, iftar: 4 },
+                'chittagong': { sehri: 5, iftar: 5 },
+                'sunamganj': { sehri: 5, iftar: 5 },
+                'maulvibazar': { sehri: 6, iftar: 6 },
+                'sylhet': { sehri: 7, iftar: 7 },
+                'manikganj': { sehri: -1, iftar: -1 },
+                'tangail': { sehri: -2, iftar: -2 },
+                'gopalganj': { sehri: -2, iftar: -2 },
+                'faridpur': { sehri: -2, iftar: -2 },
+                'sherpur': { sehri: -2, iftar: -2 },
+                'bagerhat': { sehri: -2, iftar: -2 },
+                'sirajganj': { sehri: -2, iftar: -2 },
+                'jamalpur': { sehri: -2, iftar: -2 },
+                'khulna': { sehri: -3, iftar: -3 },
+                'narail': { sehri: -3, iftar: -3 },
+                'gaibandha': { sehri: -3, iftar: -3 },
+                'rajbari': { sehri: -4, iftar: -4 },
+                'magura': { sehri: -4, iftar: -4 },
+                'bogra': { sehri: -4, iftar: -4 },
+                'kurigram': { sehri: -4, iftar: -4 },
+                'kushtia': { sehri: -5, iftar: -5 },
+                'pabna': { sehri: -5, iftar: -5 },
+                'rangpur': { sehri: -5, iftar: -5 },
+                'jessore': { sehri: -5, iftar: -5 },
+                'lalmonirhat': { sehri: -5, iftar: -5 },
+                'satkhira': { sehri: -5, iftar: -5 },
+                'jhenaidah': { sehri: -5, iftar: -5 },
+                'chuadanga': { sehri: -6, iftar: -6 },
+                'natore': { sehri: -6, iftar: -6 },
+                'joypurhat': { sehri: -6, iftar: -6 },
+                'naogaon': { sehri: -6, iftar: -6 },
+                'dinajpur': { sehri: -6, iftar: -6 },
+                'meherpur': { sehri: -7, iftar: -7 },
+                'rajshahi': { sehri: -7, iftar: -7 },
+                'nilphamari': { sehri: -7, iftar: -7 },
+                'panchagarh': { sehri: -8, iftar: -8 },
+                'chapainawabganj': { sehri: -9, iftar: -9 },
+                'thakurgaon': { sehri: -9, iftar: -9 },
+                'narayanganj': { sehri: 0, iftar: 0 },
+                'munshiganj': { sehri: 0, iftar: 0 },
+                'bhola': { sehri: 0, iftar: 0 },
+                'madaripur': { sehri: 0, iftar: 0 },
+                'shariatpur': { sehri: 0, iftar: 0 },
+                'barguna': { sehri: 0, iftar: 0 },
+                'jhalokati': { sehri: 0, iftar: 0 },
+                'barisal': { sehri: 0, iftar: 0 },
+                'patuakhali': { sehri: 0, iftar: 0 }
+            };
+
+            const calendarBody = document.getElementById('calendarBody');
+            const districtSelect = document.getElementById('district');
+            const todaySection = document.getElementById('todaySection');
+            const visitorCounter = document.getElementById('visitorCounter');
+            const printDistrict = document.getElementById('printDistrict');
+
+            function adjustTime(time, offset) {
+                const [hours, minutes] = time.split(':').map(num => parseInt(num));
+                let totalMinutes = hours * 60 + minutes + offset;
+                if (totalMinutes < 0) totalMinutes += 24 * 60; // Handle negative wraparound
+                if (totalMinutes >= 24 * 60) totalMinutes -= 24 * 60; // Handle day overflow
+                const newHours = Math.floor(totalMinutes / 60);
+                const newMinutes = totalMinutes % 60;
+                return `${newHours}:${newMinutes.toString().padStart(2, '0')} মি.`;
+            }
+
+            function populateTable(body, data, district) {
+                body.innerHTML = ''; // Clear previous content
+                const offset = districtOffsets[district] || { sehri: 0, iftar: 0 };
+                data.forEach(item => {
+                    const row = document.createElement('tr');
+                    const sehriTime = adjustTime(item.sehri, offset.sehri);
+                    const iftarTime = adjustTime(item.iftar, offset.iftar);
+                    row.innerHTML = `
+                        <td class="p-2 border-b border-gray-300 text-sm">${item.ramadanDate}</td>
+                        <td class="p-2 border-b border-gray-300 text-sm">${item.gregorianDate}</td>
+                        <td class="p-2 border-b border-gray-300 text-sm">${item.day}</td>
+                        <td class="p-2 border-b border-gray-300 text-sm">${sehriTime}</td>
+                        <td class="p-2 border-b border-gray-300 text-sm">${iftarTime}</td>
+                    `;
+                    body.appendChild(row);
+                });
+            }
+
+            function updateCalendar() {
+                const selectedDistrict = districtSelect.value;
+                populateTable(calendarBody, calendarData, selectedDistrict);
+                printDistrict.textContent = districtSelect.options[districtSelect.selectedIndex].text;
+
+                // Update today's section with adjusted times
+                const today = new Date('2025-03-01');
+                const day = today.getDate();
+                const month = today.toLocaleString('bn-BD', { month: 'long' });
+                const todayGregorian = `${day} ${month}`;
+                const todayData = calendarData.find(item => item.gregorianDate === "২ মার্চ");
+                if (todayGregorian === "১ মার্চ" || !todayData) {
+                    todaySection.textContent = `আজকের তারিখ: ${todayGregorian} (শনিবার) | রমজান শুরু হবে ২ মার্চ থেকে।`;
+                } else if (todayData) {
+                    const offset = districtOffsets[selectedDistrict] || { sehri: 0, iftar: 0 };
+                    const sehriTime = adjustTime(todayData.sehri, offset.sehri);
+                    const iftarTime = adjustTime(todayData.iftar, offset.iftar);
+                    todaySection.textContent = `আজকের তারিখ: ${todayGregorian} (${todayData.day}) | সেহরি: ${sehriTime} | ইফতার: ${iftarTime}`;
+                }
+            }
+
+            // Initial population
+            updateCalendar();
+
+            // Update on district change
+            districtSelect.addEventListener('change', updateCalendar);
+
+            // Visitor Counter
+            fetch('https://api.counterapi.dev/v1/afifbashar/ramadan2025/up')
+                .then(response => response.json())
+                .then(data => {
+                    visitorCounter.textContent = `মোট দর্শক: ${data.count.toLocaleString('bn-BD')}`;
+                })
+                .catch(error => {
+                    console.error('Error fetching visitor count:', error);
+                    visitorCounter.textContent = 'মোট দর্শক: ত্রুটি';
+                });
+        });
+    </script>
+</body>
+</html>
